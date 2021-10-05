@@ -1,0 +1,239 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-color;
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 12vh;
+        background-color: $color-white;
+        text-align: center;
+        padding: $mb-3 $mb-4;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: $box-shadow;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__logo {
+        font-size: 1.6rem;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: -.3rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        a { color: $heading-color}
+    }
+
+    &__navigation {
+
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            display: none;
+        }
+    }
+
+    &__items {
+        line-height: 30px;
+    }
+
+    &__list {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    &__link {
+        position: relative;
+        color: $text-color;
+        font-size: .7rem;
+        font-weight: $font-light;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        transition: all .4s ease-in-out;
+
+        &::after {
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: $heading-color;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: -80%;
+            left: 0;
+            transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+            color: $heading-color;
+
+            &::after {
+                width: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__text {
+        width: 35%;
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            width: 100%;
+            bottom: -30%;
+            left: 0%;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__main {
+        font-size: 3rem;
+        font-weight: $font-bold;
+        color: $heading-color;
+        line-height: 4rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    &__sub {
+        font-size: 2.5rem;
+        font-weight: $font-semi-light;
+        margin-top: 1.2rem;
+        color: $heading-color;
+        line-height: 3.5rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: 1.5rem;
+            line-height: 2.7rem;
+            margin-top: .5rem;
+        }
+    }
+
+    &__box {
+        padding-left: $mb-5;
+        margin-top: 1.5rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            padding-left: 5rem;
+        }
+
+        img {
+            width: 56%;
+
+            @include for_breakpoint(sm-resolution md-resolution) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.chatBox {
+    width: 12%;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+
+    @include for_breakpoint(sm-resolution md-resolution) {
+        width: 35%;
+        left: 60%;
+        bottom: 2%;
+    }
+
+    &__btn {
+        width: 100%;
+        padding: .9rem;
+        background-color: $dark-blue;
+        color: $color-white;
+        font-size: 1.1rem;
+        font-weight: $font-bold;
+        font-family: $heading-family;
+        border: none;
+        border-radius: 24px;
+        outline: none;
+        cursor: pointer;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: .9rem;
+            padding: .6rem;
+        }
+    }
+}
+
+.menu__toggle {
+    font-size: 1.7rem;
+    color: $text-color;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 45vh;
+    background-color: $color-black;
+    padding: 2rem;
+    color: $color-white;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+
+    @include for_breakpoint(sm-resolution md-resolution) {
+        height: 60vh;
+    }
+
+    &__list {
+        
+        &:not(:first-child) {
+            margin-top: 1.2rem;
+
+            @include for_breakpoint(sm-resolution md-resolution) {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__link {
+        font-size: .9rem;
+        font-weight: $font-semi-light;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: .7rem;
+        }
+    }
+
+    &__close {
+        position:absolute;
+        top: 2%;
+        right: 7%;
+        font-size: 1.7rem;
+
+        @include for_breakpoint(sm-resolution md-resolution) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.show-menu {
+    visibility: visible;
+}
