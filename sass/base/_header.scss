@@ -196,7 +196,7 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution) {
-        height: 20vh;
+        height: 60vh;
     }
 
     &__list {

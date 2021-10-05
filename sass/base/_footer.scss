@@ -6,7 +6,7 @@
 
     @include for_breakpoint(sm-resolution md-resolution) {
            padding: 3rem 2rem;
-           height: 150vh;
+           height: 100vh;
     }
 
     &__container {
