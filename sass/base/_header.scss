@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../image/header__hero.jpeg');
     background-position: top;
     background-size: cover;
@@ -30,9 +30,9 @@
         letter-spacing: .1rem;
         margin-top: -.3rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             font-size: 1.3rem;
-            margin-top: 0;
+            margin-top: .5rem;
         }
 
         a { color: $heading-color}
@@ -141,7 +141,7 @@
         outline: none;
         cursor: pointer;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             font-size: .9rem;
             padding: .6rem;
         }
@@ -152,6 +152,10 @@
     font-size: 1.7rem;
     color: $text-color;
     cursor: pointer;
+    
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+        margin-top: .5rem;
+    }
 }
 
 .menu {
