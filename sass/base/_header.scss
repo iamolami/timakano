@@ -14,8 +14,9 @@
         justify-content: space-between;
         box-shadow: $box-shadow;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: 1rem 2rem;
+            height: 100%;
         }
     }
 
@@ -37,7 +38,7 @@
     &__navigation {
 
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             display: none;
         }
     }
@@ -91,9 +92,9 @@
         bottom: 10%;
         right: 2%;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             width: 100%;
-            bottom: -30%;
+            //bottom: -30%;
             left: 0%;
             padding: 1rem 2rem;
         }
@@ -105,7 +106,7 @@
         color: $heading-color;
         line-height: 4rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             font-size: 2rem;
             line-height: 3rem;
         }
@@ -137,7 +138,8 @@
             width: 56%;
 
             @include for_breakpoint(sm-resolution md-resolution) {
-                width: 90%;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -151,7 +153,7 @@
 
     @include for_breakpoint(sm-resolution md-resolution) {
         width: 35%;
-        left: 60%;
+        left: 80%;
         bottom: 2%;
     }
 
@@ -195,8 +197,8 @@
     z-index: 1000;
     box-shadow: $box-shadow;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
-        height: 60vh;
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+        height: 100%;
     }
 
     &__list {
