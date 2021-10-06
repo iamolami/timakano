@@ -71,9 +71,9 @@
 @media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .about__container__pic {
     width: 100%;
+    margin-top: 0;
+    margin: 2rem 1rem;
     display: block;
-    margin-left: 3rem;
-    margin-top: 1rem;
   }
 }
 .about__container__text {
@@ -170,7 +170,6 @@
 
 .about__fixed {
   padding-top: 3rem;
-  height: 100vh;
   margin-bottom: 2.5rem;
 }
 
@@ -184,11 +183,11 @@
 @media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .about__margin {
     padding-right: 2rem;
+    margin-top: -10rem;
   }
 }
 
 .about__01 {
-  margin-top: 10rem;
   padding-right: 7rem;
 }
 @media (max-width: 479px), (max-width: 500px) {
@@ -262,9 +261,9 @@
   background-color: #f9f9f9;
   padding-top: 1.8rem;
 }
-@media (max-width: 479px), (max-width: 500px) {
+@media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .elementary {
-    margin-top: 1.8rem;
+    margin-top: 1rem;
   }
 }
 .elementary__head {
@@ -272,9 +271,10 @@
   font-size: 1.8rem;
   font-family: "Libre Baskerville", serif;
   color: #101010;
+  margin-bottom: 1.8rem;
   font-style: italic;
 }
-@media (max-width: 479px), (max-width: 500px) {
+@media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .elementary__head {
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
@@ -283,9 +283,9 @@
 .elementary__text {
   width: 50%;
 }
-@media (max-width: 479px), (max-width: 500px) {
+@media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .elementary__text {
-    width: 90%;
+    width: 92%;
   }
 }
 .elementary__info {
@@ -295,7 +295,7 @@
 }
 @media (max-width: 479px), (max-width: 500px) {
   .elementary__info {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
   }
 }
@@ -314,8 +314,9 @@
 }
 @media (max-width: 479px), (max-width: 500px) {
   .elementary__imgBox {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
   }
 }
 .elementary__main {
@@ -327,7 +328,7 @@
 }
 @media (max-width: 479px), (max-width: 500px) {
   .elementary__main {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .elementary__post {
