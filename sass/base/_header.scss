@@ -9,7 +9,7 @@
     &__container {
         position: relative;
         width: 100%;
-        height: 12vh;
+        //height: 12vh;
         background-color: $color-white;
         text-align: center;
         padding: $mb-3 $mb-4;
@@ -19,7 +19,7 @@
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: 1rem 2rem;
-            height: 10vh;
+            //height: 10vh;
         }
     }
 
