@@ -177,7 +177,7 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        top: 16%;
+        top: 10%;
     }
 
     &__list {
