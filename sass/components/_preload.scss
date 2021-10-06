@@ -16,7 +16,7 @@
         color: $heading-color;
         font-weight: $font-bold;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
           display: none;
         }
     }
@@ -38,7 +38,7 @@
     display: inline-block;
     font-weight: $font-light;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
       font-size: 1.5rem;
     }
   }

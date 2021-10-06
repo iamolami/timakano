@@ -1,11 +1,10 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-color: $bg-color;
-
-    @include for_breakpoint (sm-resolution md-resolution xl-resolution) {
-        height: 100%;
-    }
+    background-image: url('../image/header__hero.jpeg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__container {
         position: relative;
@@ -20,7 +19,7 @@
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: 1rem 2rem;
-            height: 100%;
+            height: 15vh;
         }
     }
 
@@ -98,7 +97,6 @@
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             width: 100%;
-            bottom: -2%;
             left: 0%;
             padding: 1rem 2rem;
         }
@@ -107,7 +105,7 @@
     &__main {
         font-size: 3rem;
         font-weight: $font-semi-light;
-        color: $heading-color;
+        color: $color-white;
         line-height: 4rem;
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
@@ -115,28 +113,7 @@
             line-height: 2.5rem;
         }
     }
-    
 
-    &__box {
-        padding-left: $mb-5;
-        margin-top: 1.5rem;
-        height: 50vh;
-
-        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-            padding-left: 2rem;
-            height: 50vh;
-        }
-
-        img {
-            width: 56%;
-            height: 100%;
-
-            @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
 }
 
 .chatBox {
@@ -146,9 +123,9 @@
     left: 2%;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        width: 35%;
-        left: 80%;
-        bottom: 2%;
+        width: 50%;
+        left: 50%;
+        bottom: 1%;
     }
 
     &__btn {
@@ -183,7 +160,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 60%;
+    height: 60vh;
     background-color: $color-black;
     padding: 2rem;
     color: $color-white;
@@ -192,7 +169,7 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        height: 70%;
+        height: 90vh;
         top: 10%;
     }
 
@@ -202,7 +179,7 @@
         &:not(:first-child) {
             margin-top: 2rem;
 
-            @include for_breakpoint(sm-resolution md-resolution) {
+            @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
                 margin-top: 2rem;
             }
         }
@@ -215,7 +192,7 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md- xl-resolution) {
             font-size: .7rem;
         }
     }
@@ -226,7 +203,7 @@
         right: 7%;
         font-size: 1.7rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             font-size: 1.5rem;
         }
     }
