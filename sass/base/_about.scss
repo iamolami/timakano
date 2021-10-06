@@ -8,13 +8,13 @@
     align-items: stretch;
     flex-direction: row;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
         flex-direction: column;
     }
 
     &__box {
         flex: 1;
-        height: 65vh;
+        //height: 65vh;
     }
 
     &__img {
@@ -22,30 +22,37 @@
         margin-left: 6rem;
         margin-top: 5rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             display: none;
+            margin-left: 0;
         }
     }
 
     &__image {
 
-        @include for_breakpoint(sm-resolution md-resolution) {
-            margin-top: 22rem;
-            margin-left: 3rem;
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+            //margin-top: 22rem;
+            width: 100%;
+            margin-top: 0;
+            margin: 2rem 1rem;
             display: block;
         }
     }
 
     &__pic {
-        display: block;
-        margin-left: 3rem;
-        margin-top: 1rem;
+       
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+            width: 100%;
+            display: block;
+            margin-left: 3rem;
+            margin-top: 1rem;
+        }
     }
 
     &__text {
         padding-left: $mb-5;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding-left: 2rem;
             padding-right: 2rem;
         }
@@ -59,7 +66,7 @@
         letter-spacing: .1rem;
         margin-top: 11rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             margin-top: 2rem;
             font-size: .8rem;
         }
@@ -148,9 +155,9 @@
 .about__margin { 
     padding-right: $mb-5;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
         padding-right: 2rem;
-        margin-top: 33rem;
+        margin-top: 40rem;
     }
 }
 .about__01 {
@@ -306,7 +313,7 @@
 
 .swiper {
     width: 100%;
-    height: 40vh;
+    //height: 40vh;
     margin-bottom: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -314,7 +321,7 @@
     @include for_breakpoint(sm-resolution md-resolution) {
         padding-left: 2rem;
         padding-right: 2rem;
-        height: 60vh;
+        //height: 60vh;
     }
 }
 
