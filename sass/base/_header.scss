@@ -6,6 +6,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include for_breakpoint(xl-resolution sm-resolution md-resolution) {
+        min-height: 100vh;
+    }
+
     &__container {
         position: relative;
         width: 100%;
@@ -109,8 +113,8 @@
         line-height: 4rem;
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-            font-size: 1.8rem;
-            line-height: 2.5rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
         }
     }
 
@@ -173,11 +177,11 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        top: 10%;
+        top: 16%;
     }
 
     &__list {
-        margin-top: 2rem;
+        
 
         &:not(:first-child) {
             margin-top: 2rem;
