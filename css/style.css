@@ -923,7 +923,7 @@ ul, li {
 @media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .header__container {
     padding: 1rem 2rem;
-    height: 15vh;
+    height: 12vh;
   }
 }
 .header__logo {
@@ -1065,7 +1065,7 @@ ul, li {
 }
 @media (max-width: 479px), (max-width: 500px), (max-width: 360px) {
   .menu {
-    height: 90vh;
+    height: 80vh;
     top: 10%;
   }
 }

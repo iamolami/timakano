@@ -19,7 +19,7 @@
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: 1rem 2rem;
-            height: 15vh;
+            height: 12vh;
         }
     }
 
@@ -169,7 +169,7 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        height: 90vh;
+        height: 80vh;
         top: 10%;
     }
 
