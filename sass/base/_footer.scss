@@ -4,9 +4,9 @@
     background-color: $color-black;
     padding: 5rem 10rem;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
            padding: 3rem 2rem;
-           height: 100vh;
+           height: 100%;
     }
 
     &__container {
