@@ -3,6 +3,10 @@
     height: 100vh;
     background-color: $bg-color;
 
+    @include for_breakpoint (sm-resolution md-resolution xl-resolution) {
+        height: 100%;
+    }
+
     &__container {
         position: relative;
         width: 100%;
@@ -94,7 +98,7 @@
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             width: 100%;
-            //bottom: -30%;
+            bottom: -2%;
             left: 0%;
             padding: 1rem 2rem;
         }
@@ -102,44 +106,30 @@
 
     &__main {
         font-size: 3rem;
-        font-weight: $font-bold;
+        font-weight: $font-semi-light;
         color: $heading-color;
         line-height: 4rem;
 
         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-            font-size: 2rem;
-            line-height: 3rem;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
         }
     }
-
-    &__sub {
-        font-size: 2.5rem;
-        font-weight: $font-semi-light;
-        margin-top: 1.2rem;
-        color: $heading-color;
-        line-height: 3.5rem;
-
-        @include for_breakpoint(sm-resolution md-resolution) {
-            font-size: 1.5rem;
-            line-height: 2.7rem;
-            margin-top: .5rem;
-        }
-    }
+    
 
     &__box {
         padding-left: $mb-5;
         margin-top: 1.5rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
-            padding-left: 5rem;
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+            padding-left: 2rem;
         }
 
         img {
             width: 56%;
 
-            @include for_breakpoint(sm-resolution md-resolution) {
+            @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
                 width: 100%;
-                height: 100%;
             }
         }
     }
@@ -151,7 +141,7 @@
     bottom: 5%;
     left: 2%;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
         width: 35%;
         left: 80%;
         bottom: 2%;
@@ -189,7 +179,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 45vh;
+    height: 100%;
     background-color: $color-black;
     padding: 2rem;
     color: $color-white;
@@ -198,7 +188,7 @@
     box-shadow: $box-shadow;
 
     @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
-        height: 100%;
+        height: 60%;
     }
 
     &__list {
