@@ -1,7 +1,7 @@
 .articles {
    padding-top: 5.5rem;
 
-    @include for_breakpoint(sm-resolution md-resolution) {
+    @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
         padding-top: 0;
     }
 
@@ -25,7 +25,7 @@
         padding: 2rem 7rem;
         margin-top: 3rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             flex-direction: column;
             padding: 2rem 2rem;
             margin-top: 1.8rem;
@@ -34,7 +34,7 @@
 
     &__box {
         flex: 1;
-        height: 55vh;
+        //height: 55vh;
     }
 
     &__01 {
@@ -44,7 +44,7 @@
     &__text {
         padding: 2rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md- xl-resolution) {
             padding: 0;
         }
     }
@@ -89,7 +89,7 @@
         flex-direction: row;
         margin-top: 5rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: 2rem 2rem;
             flex-direction: column;
             margin-top: 0rem;
@@ -101,21 +101,20 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row; 
-
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution){
             flex-direction: column;
         }
 
         &:not(:first-child) {
             
-            @include for_breakpoint(sm-resolution md-resolution) {
+            @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
                 margin-top: 1rem;
             }
         }
     }
 
     &__mv {
-         @include for_breakpoint(sm-resolution md-resolution) {
+         @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
              margin-top: -2.5rem;
          }
     }
@@ -127,12 +126,12 @@
 
     &__elementoLeft {
         flex-basis: 40%;
-        height: 40vh;
+        //height: 40vh;
         //background-color: #eee;
         text-align: center;
         padding: .5rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             flex-basis: 100%;
             text-align: left;
         }
@@ -140,24 +139,25 @@
 
     &__elementoRight {
         flex-basis: 60%;
-        height: 40vh;
+        //height: 40vh;
         padding: 2rem;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
             padding: .5rem;
             flex-basis: 60%;
-            height: 40vh;
+            //height: 40vh;
         }
     }
 
     &__elementoImg {
         width: 80%;
-        height: 38vh;
+        //height: 38vh;
         box-shadow: $box-shadow;
 
-        @include for_breakpoint(sm-resolution md-resolution) {
-            width: 30%;
-            height: 38vh;
+        @include for_breakpoint(sm-resolution md-resolution xl-resolution) {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            //height: 38vh;
         }
     }
 
